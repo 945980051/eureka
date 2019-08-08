@@ -1,0 +1,21 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  server:
+    # https://www.jianshu.com/p/282137f07827
+    # 主动失效时间
+    eviction-interval-timer-in-ms: 5000
+    # 禁用自我保护
+    enableSelfPreservation: false
+    # 禁用readOnlyCacheMap
+    use-read-only-response-cache: false
+spring:
+  profiles:
+    active: local
