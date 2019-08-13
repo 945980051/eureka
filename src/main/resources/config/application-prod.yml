@@ -2,12 +2,12 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: 111.230.99.118
+    hostname: 111.230.143.197
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://47.111.99.118:8761/eureka/
+      defaultZone: http://111.230.143.197/eureka/
+    register-with-eureka: false
+    fetch-registry: false
   server:
     # https://www.jianshu.com/p/282137f07827
     # 主动失效时间
