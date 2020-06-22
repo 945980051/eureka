@@ -19,3 +19,5 @@ eureka:
 spring:
   profiles:
     active: dev
+  application:
+    name: Euerka Server
